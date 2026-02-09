@@ -1,0 +1,63 @@
+#ifndef __KEY_H
+#define __KEY_H
+
+#include "main.h"
+#include "stm32f1xx_hal.h"
+
+
+#define KEY_NUM 12 
+
+typedef enum {
+    K1 = 0,
+    K2, 
+    K3_FRONT,
+    K4_BACK,
+    K5_RIGHT,
+    K6_LEFT,
+    K7_UP,
+    K8_DOWN,
+    K9_P,
+    K10_M,
+    K11_LOCK,
+    K12_SET
+} KEY_Type_e;
+
+typedef enum {
+    KEY_RELEASED = 0,
+    KEY_PRESSED
+} KEY_State_e;
+
+typedef enum {
+    KEY_LOW_LEVEL_PRESS = 0,
+    KEY_HIGH_LEVEL_PRESS,
+} KEY_PressLevel_e;
+
+typedef enum {
+    KEY_MODE_NORMAL = 0,     // 单次触发
+    KEY_MODE_CONTINUOUS      // 连按模式
+} KEY_Mode_e;
+
+/* 静态参数：硬件连接属性 */
+typedef struct {
+    GPIO_TypeDef* GPIO_Port;
+    uint16_t GPIO_Pin;
+    KEY_PressLevel_e PressLevel; // 按下时的有效电平
+    KEY_Mode_e Mode;             // 检测模式
+} KeyStaticParam_s;
+
+/* 运行参数：实时状态属性 */
+typedef struct {
+    KEY_State_e LastState;       // 上次状态（用于边沿检测）
+    uint32_t LastTick;           // 用于消抖或长按计时
+} KeyRunningParam_s;
+
+typedef struct {
+    KeyStaticParam_s StaticParam;
+    KeyRunningParam_s RunningParam;
+} KEYInstance;
+
+/* 外部调用接口 */
+void KeyDeviceInit(void);
+uint8_t Key_GetNum(KEY_Type_e KeyType);
+
+#endif

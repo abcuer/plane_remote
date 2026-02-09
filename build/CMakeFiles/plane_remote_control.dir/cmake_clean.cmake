@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj"
+  "CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/main.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/main.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Modules/key/key.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Modules/key/key.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Modules/led/led.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Modules/led/led.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.obj"
+  "CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.obj.d"
+  "CMakeFiles/plane_remote_control.dir/startup_stm32f103xb.s.obj"
+  "plane_remote_control.map"
+  "plane_remote_control.elf"
+  "plane_remote_control.elf.manifest"
+  "plane_remote_control.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang ASM C)
+  include(CMakeFiles/plane_remote_control.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

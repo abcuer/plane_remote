@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/MCU/Project/plane_remote_control/build/cmake_install.cmake",
+		"D:/MCU/Project/plane_remote_control/build/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

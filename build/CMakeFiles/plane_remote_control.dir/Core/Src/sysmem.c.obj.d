@@ -1,0 +1,20 @@
+CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.obj: \
+ D\:\MCU\Project\plane_remote_control\Core\Src\sysmem.c \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\errno.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\sys\errno.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\sys\reent.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\_ansi.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\newlib.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\_newlib_version.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\sys\config.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\machine\ieeefp.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\sys\features.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\lib\gcc\arm-none-eabi\10.2.1\include\stddef.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\sys\_types.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\machine\_types.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\machine\_default_types.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\sys\lock.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\lib\gcc\arm-none-eabi\10.2.1\include\stdint.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\stdint.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\sys\_intsup.h \
+ c\:\users\fascinating_sea\.eide\tools\gcc_arm\arm-none-eabi\include\sys\_stdint.h
