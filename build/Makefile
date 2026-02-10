@@ -141,6 +141,30 @@ STM32_Drivers/fast:
 	$(MAKE) $(MAKESILENT) -f cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\build.make cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/build
 .PHONY : STM32_Drivers/fast
 
+App/remote/remote.obj: App/remote/remote.c.obj
+.PHONY : App/remote/remote.obj
+
+# target to build an object file
+App/remote/remote.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plane_remote_control.dir\build.make CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj
+.PHONY : App/remote/remote.c.obj
+
+App/remote/remote.i: App/remote/remote.c.i
+.PHONY : App/remote/remote.i
+
+# target to preprocess a source file
+App/remote/remote.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plane_remote_control.dir\build.make CMakeFiles/plane_remote_control.dir/App/remote/remote.c.i
+.PHONY : App/remote/remote.c.i
+
+App/remote/remote.s: App/remote/remote.c.s
+.PHONY : App/remote/remote.s
+
+# target to generate assembly for a file
+App/remote/remote.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\plane_remote_control.dir\build.make CMakeFiles/plane_remote_control.dir/App/remote/remote.c.s
+.PHONY : App/remote/remote.c.s
+
 App/utils/utils.obj: App/utils/utils.c.obj
 .PHONY : App/utils/utils.obj
 
@@ -519,6 +543,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... STM32_Drivers
 	@echo ... plane_remote_control
+	@echo ... App/remote/remote.obj
+	@echo ... App/remote/remote.i
+	@echo ... App/remote/remote.s
 	@echo ... App/utils/utils.obj
 	@echo ... App/utils/utils.i
 	@echo ... App/utils/utils.s

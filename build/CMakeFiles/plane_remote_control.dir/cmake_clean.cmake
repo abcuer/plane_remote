@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj"
+  "CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj.d"
   "CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj"
   "CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj.d"
   "CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj"

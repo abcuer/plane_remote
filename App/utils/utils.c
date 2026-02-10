@@ -12,7 +12,7 @@ void System_Init(void)
     LedDevice_Init();
     BeepDeviceInit();
     KeyDeviceInit();
-    NRF24L01_init();
+    NRF24L01_Init();
     HAL_Delay(100);
     // NRF24L01_init();
 

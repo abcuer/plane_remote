@@ -69,8 +69,7 @@ endfunction()
 # ---------------- 添加用户代码目录 -----------------
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/App)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/App/utils)
-USER_ADD_DIR(${CMAKE_SOURCE_DIR}/App/ctrl)
-USER_ADD_DIR(${CMAKE_SOURCE_DIR}/App/scheduler)
+USER_ADD_DIR(${CMAKE_SOURCE_DIR}/App/remote)
 
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/Bsp)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/Bsp/delay)

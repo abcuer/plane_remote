@@ -15,18 +15,18 @@
 ########################
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-addr2line.exe
+CMAKE_ADDR2LINE:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-addr2line.exe
 
 //Path to a program.
-CMAKE_AR:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-ar.exe
+CMAKE_AR:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-ar.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_AR:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc-ar.exe
+CMAKE_ASM_COMPILER_AR:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_RANLIB:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc-ranlib.exe
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc-ranlib.exe
 
 //Flags used by the ASM compiler during all build types.
 CMAKE_ASM_FLAGS:STRING=
@@ -47,16 +47,16 @@ CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-g++.exe
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:UNINITIALIZED=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-g++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc-ar.exe
+CMAKE_CXX_COMPILER_AR:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc-ranlib.exe
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc-ranlib.exe
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -73,16 +73,16 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:STRING=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc.exe
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:UNINITIALIZED=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc-ar.exe
+CMAKE_C_COMPILER_AR:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc-ar.exe
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc-ranlib.exe
+CMAKE_C_COMPILER_RANLIB:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc-ranlib.exe
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -147,10 +147,10 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-nm.exe
+CMAKE_NM:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-nm.exe
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-objdump.exe
+CMAKE_OBJDUMP:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-objdump.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=
@@ -180,10 +180,10 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-ranlib.exe
+CMAKE_RANLIB:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-ranlib.exe
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-readelf.exe
+CMAKE_READELF:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-readelf.exe
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -233,7 +233,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-strip.exe
+CMAKE_STRIP:FILEPATH=D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-strip.exe
 
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND

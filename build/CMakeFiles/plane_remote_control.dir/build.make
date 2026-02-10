@@ -75,224 +75,238 @@ CMakeFiles/plane_remote_control.dir/Core/Src/main.c.obj: CMakeFiles/plane_remote
 CMakeFiles/plane_remote_control.dir/Core/Src/main.c.obj: D:/MCU/Project/plane_remote_control/Core/Src/main.c
 CMakeFiles/plane_remote_control.dir/Core/Src/main.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/plane_remote_control.dir/Core/Src/main.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/main.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\main.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\main.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\main.c
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/main.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\main.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\main.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\main.c
 
 CMakeFiles/plane_remote_control.dir/Core/Src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Core/Src/main.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\main.c > CMakeFiles\plane_remote_control.dir\Core\Src\main.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\main.c > CMakeFiles\plane_remote_control.dir\Core\Src\main.c.i
 
 CMakeFiles/plane_remote_control.dir/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Core/Src/main.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\main.c -o CMakeFiles\plane_remote_control.dir\Core\Src\main.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\main.c -o CMakeFiles\plane_remote_control.dir\Core\Src\main.c.s
 
 CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.obj: D:/MCU/Project/plane_remote_control/Core/Src/gpio.c
 CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\gpio.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\gpio.c
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\gpio.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\gpio.c
 
 CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\gpio.c > CMakeFiles\plane_remote_control.dir\Core\Src\gpio.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\gpio.c > CMakeFiles\plane_remote_control.dir\Core\Src\gpio.c.i
 
 CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Core/Src/gpio.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\gpio.c -o CMakeFiles\plane_remote_control.dir\Core\Src\gpio.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\gpio.c -o CMakeFiles\plane_remote_control.dir\Core\Src\gpio.c.s
 
 CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.obj: D:/MCU/Project/plane_remote_control/Core/Src/spi.c
 CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\spi.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\spi.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\spi.c
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\spi.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\spi.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\spi.c
 
 CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\spi.c > CMakeFiles\plane_remote_control.dir\Core\Src\spi.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\spi.c > CMakeFiles\plane_remote_control.dir\Core\Src\spi.c.i
 
 CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Core/Src/spi.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\spi.c -o CMakeFiles\plane_remote_control.dir\Core\Src\spi.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\spi.c -o CMakeFiles\plane_remote_control.dir\Core\Src\spi.c.s
 
 CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.obj: D:/MCU/Project/plane_remote_control/Core/Src/stm32f1xx_it.c
 CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_it.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_it.c
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_it.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_it.c
 
 CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_it.c > CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_it.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_it.c > CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_it.c.i
 
 CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_it.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_it.c -o CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_it.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_it.c -o CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_it.c.s
 
 CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.obj: D:/MCU/Project/plane_remote_control/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_hal_msp.c
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_hal_msp.c > CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_hal_msp.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_hal_msp.c > CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_hal_msp.c.i
 
 CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Core/Src/stm32f1xx_hal_msp.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_hal_msp.c -o CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_hal_msp.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\stm32f1xx_hal_msp.c -o CMakeFiles\plane_remote_control.dir\Core\Src\stm32f1xx_hal_msp.c.s
 
 CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.obj: D:/MCU/Project/plane_remote_control/Core/Src/sysmem.c
 CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\sysmem.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\sysmem.c
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\sysmem.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\sysmem.c
 
 CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\sysmem.c > CMakeFiles\plane_remote_control.dir\Core\Src\sysmem.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\sysmem.c > CMakeFiles\plane_remote_control.dir\Core\Src\sysmem.c.i
 
 CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\sysmem.c -o CMakeFiles\plane_remote_control.dir\Core\Src\sysmem.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\sysmem.c -o CMakeFiles\plane_remote_control.dir\Core\Src\sysmem.c.s
 
 CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.obj: D:/MCU/Project/plane_remote_control/Core/Src/syscalls.c
 CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\syscalls.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\syscalls.c
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\plane_remote_control.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\plane_remote_control.dir\Core\Src\syscalls.c.obj -c D:\MCU\Project\plane_remote_control\Core\Src\syscalls.c
 
 CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\syscalls.c > CMakeFiles\plane_remote_control.dir\Core\Src\syscalls.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Core\Src\syscalls.c > CMakeFiles\plane_remote_control.dir\Core\Src\syscalls.c.i
 
 CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\syscalls.c -o CMakeFiles\plane_remote_control.dir\Core\Src\syscalls.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Core\Src\syscalls.c -o CMakeFiles\plane_remote_control.dir\Core\Src\syscalls.c.s
 
 CMakeFiles/plane_remote_control.dir/startup_stm32f103xb.s.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/startup_stm32f103xb.s.obj: D:/MCU/Project/plane_remote_control/startup_stm32f103xb.s
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object CMakeFiles/plane_remote_control.dir/startup_stm32f103xb.s.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\plane_remote_control.dir\startup_stm32f103xb.s.obj -c D:\MCU\Project\plane_remote_control\startup_stm32f103xb.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\plane_remote_control.dir\startup_stm32f103xb.s.obj -c D:\MCU\Project\plane_remote_control\startup_stm32f103xb.s
 
 CMakeFiles/plane_remote_control.dir/startup_stm32f103xb.s.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/plane_remote_control.dir/startup_stm32f103xb.s.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E D:\MCU\Project\plane_remote_control\startup_stm32f103xb.s > CMakeFiles\plane_remote_control.dir\startup_stm32f103xb.s.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E D:\MCU\Project\plane_remote_control\startup_stm32f103xb.s > CMakeFiles\plane_remote_control.dir\startup_stm32f103xb.s.i
 
 CMakeFiles/plane_remote_control.dir/startup_stm32f103xb.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/plane_remote_control.dir/startup_stm32f103xb.s.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S D:\MCU\Project\plane_remote_control\startup_stm32f103xb.s -o CMakeFiles\plane_remote_control.dir\startup_stm32f103xb.s.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S D:\MCU\Project\plane_remote_control\startup_stm32f103xb.s -o CMakeFiles\plane_remote_control.dir\startup_stm32f103xb.s.s
 
 CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj: D:/MCU/Project/plane_remote_control/App/utils/utils.c
 CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj -MF CMakeFiles\plane_remote_control.dir\App\utils\utils.c.obj.d -o CMakeFiles\plane_remote_control.dir\App\utils\utils.c.obj -c D:\MCU\Project\plane_remote_control\App\utils\utils.c
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj -MF CMakeFiles\plane_remote_control.dir\App\utils\utils.c.obj.d -o CMakeFiles\plane_remote_control.dir\App\utils\utils.c.obj -c D:\MCU\Project\plane_remote_control\App\utils\utils.c
 
 CMakeFiles/plane_remote_control.dir/App/utils/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/App/utils/utils.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\App\utils\utils.c > CMakeFiles\plane_remote_control.dir\App\utils\utils.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\App\utils\utils.c > CMakeFiles\plane_remote_control.dir\App\utils\utils.c.i
 
 CMakeFiles/plane_remote_control.dir/App/utils/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/App/utils/utils.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\App\utils\utils.c -o CMakeFiles\plane_remote_control.dir\App\utils\utils.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\App\utils\utils.c -o CMakeFiles\plane_remote_control.dir\App\utils\utils.c.s
+
+CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
+CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj: D:/MCU/Project/plane_remote_control/App/remote/remote.c
+CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj"
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj -MF CMakeFiles\plane_remote_control.dir\App\remote\remote.c.obj.d -o CMakeFiles\plane_remote_control.dir\App\remote\remote.c.obj -c D:\MCU\Project\plane_remote_control\App\remote\remote.c
+
+CMakeFiles/plane_remote_control.dir/App/remote/remote.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/App/remote/remote.c.i"
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\App\remote\remote.c > CMakeFiles\plane_remote_control.dir\App\remote\remote.c.i
+
+CMakeFiles/plane_remote_control.dir/App/remote/remote.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/App/remote/remote.c.s"
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\App\remote\remote.c -o CMakeFiles\plane_remote_control.dir\App\remote\remote.c.s
 
 CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj: D:/MCU/Project/plane_remote_control/Bsp/delay/bsp_delay.c
 CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj -MF CMakeFiles\plane_remote_control.dir\Bsp\delay\bsp_delay.c.obj.d -o CMakeFiles\plane_remote_control.dir\Bsp\delay\bsp_delay.c.obj -c D:\MCU\Project\plane_remote_control\Bsp\delay\bsp_delay.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj"
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj -MF CMakeFiles\plane_remote_control.dir\Bsp\delay\bsp_delay.c.obj.d -o CMakeFiles\plane_remote_control.dir\Bsp\delay\bsp_delay.c.obj -c D:\MCU\Project\plane_remote_control\Bsp\delay\bsp_delay.c
 
 CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Bsp\delay\bsp_delay.c > CMakeFiles\plane_remote_control.dir\Bsp\delay\bsp_delay.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Bsp\delay\bsp_delay.c > CMakeFiles\plane_remote_control.dir\Bsp\delay\bsp_delay.c.i
 
 CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Bsp\delay\bsp_delay.c -o CMakeFiles\plane_remote_control.dir\Bsp\delay\bsp_delay.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Bsp\delay\bsp_delay.c -o CMakeFiles\plane_remote_control.dir\Bsp\delay\bsp_delay.c.s
 
 CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj: D:/MCU/Project/plane_remote_control/Bsp/gpio/bsp_gpio.c
 CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj -MF CMakeFiles\plane_remote_control.dir\Bsp\gpio\bsp_gpio.c.obj.d -o CMakeFiles\plane_remote_control.dir\Bsp\gpio\bsp_gpio.c.obj -c D:\MCU\Project\plane_remote_control\Bsp\gpio\bsp_gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj"
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj -MF CMakeFiles\plane_remote_control.dir\Bsp\gpio\bsp_gpio.c.obj.d -o CMakeFiles\plane_remote_control.dir\Bsp\gpio\bsp_gpio.c.obj -c D:\MCU\Project\plane_remote_control\Bsp\gpio\bsp_gpio.c
 
 CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Bsp\gpio\bsp_gpio.c > CMakeFiles\plane_remote_control.dir\Bsp\gpio\bsp_gpio.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Bsp\gpio\bsp_gpio.c > CMakeFiles\plane_remote_control.dir\Bsp\gpio\bsp_gpio.c.i
 
 CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Bsp\gpio\bsp_gpio.c -o CMakeFiles\plane_remote_control.dir\Bsp\gpio\bsp_gpio.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Bsp\gpio\bsp_gpio.c -o CMakeFiles\plane_remote_control.dir\Bsp\gpio\bsp_gpio.c.s
 
 CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.obj: D:/MCU/Project/plane_remote_control/Bsp/iic/bsp_iic.c
 CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.obj -MF CMakeFiles\plane_remote_control.dir\Bsp\iic\bsp_iic.c.obj.d -o CMakeFiles\plane_remote_control.dir\Bsp\iic\bsp_iic.c.obj -c D:\MCU\Project\plane_remote_control\Bsp\iic\bsp_iic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.obj"
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.obj -MF CMakeFiles\plane_remote_control.dir\Bsp\iic\bsp_iic.c.obj.d -o CMakeFiles\plane_remote_control.dir\Bsp\iic\bsp_iic.c.obj -c D:\MCU\Project\plane_remote_control\Bsp\iic\bsp_iic.c
 
 CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Bsp\iic\bsp_iic.c > CMakeFiles\plane_remote_control.dir\Bsp\iic\bsp_iic.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Bsp\iic\bsp_iic.c > CMakeFiles\plane_remote_control.dir\Bsp\iic\bsp_iic.c.i
 
 CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Bsp\iic\bsp_iic.c -o CMakeFiles\plane_remote_control.dir\Bsp\iic\bsp_iic.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Bsp\iic\bsp_iic.c -o CMakeFiles\plane_remote_control.dir\Bsp\iic\bsp_iic.c.s
 
 CMakeFiles/plane_remote_control.dir/Modules/led/led.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Modules/led/led.c.obj: D:/MCU/Project/plane_remote_control/Modules/led/led.c
 CMakeFiles/plane_remote_control.dir/Modules/led/led.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/plane_remote_control.dir/Modules/led/led.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Modules/led/led.c.obj -MF CMakeFiles\plane_remote_control.dir\Modules\led\led.c.obj.d -o CMakeFiles\plane_remote_control.dir\Modules\led\led.c.obj -c D:\MCU\Project\plane_remote_control\Modules\led\led.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/plane_remote_control.dir/Modules/led/led.c.obj"
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Modules/led/led.c.obj -MF CMakeFiles\plane_remote_control.dir\Modules\led\led.c.obj.d -o CMakeFiles\plane_remote_control.dir\Modules\led\led.c.obj -c D:\MCU\Project\plane_remote_control\Modules\led\led.c
 
 CMakeFiles/plane_remote_control.dir/Modules/led/led.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Modules/led/led.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Modules\led\led.c > CMakeFiles\plane_remote_control.dir\Modules\led\led.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Modules\led\led.c > CMakeFiles\plane_remote_control.dir\Modules\led\led.c.i
 
 CMakeFiles/plane_remote_control.dir/Modules/led/led.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Modules/led/led.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Modules\led\led.c -o CMakeFiles\plane_remote_control.dir\Modules\led\led.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Modules\led\led.c -o CMakeFiles\plane_remote_control.dir\Modules\led\led.c.s
 
 CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.obj: D:/MCU/Project/plane_remote_control/Modules/beep/beep.c
 CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.obj -MF CMakeFiles\plane_remote_control.dir\Modules\beep\beep.c.obj.d -o CMakeFiles\plane_remote_control.dir\Modules\beep\beep.c.obj -c D:\MCU\Project\plane_remote_control\Modules\beep\beep.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.obj"
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.obj -MF CMakeFiles\plane_remote_control.dir\Modules\beep\beep.c.obj.d -o CMakeFiles\plane_remote_control.dir\Modules\beep\beep.c.obj -c D:\MCU\Project\plane_remote_control\Modules\beep\beep.c
 
 CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Modules\beep\beep.c > CMakeFiles\plane_remote_control.dir\Modules\beep\beep.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Modules\beep\beep.c > CMakeFiles\plane_remote_control.dir\Modules\beep\beep.c.i
 
 CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Modules/beep/beep.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Modules\beep\beep.c -o CMakeFiles\plane_remote_control.dir\Modules\beep\beep.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Modules\beep\beep.c -o CMakeFiles\plane_remote_control.dir\Modules\beep\beep.c.s
 
 CMakeFiles/plane_remote_control.dir/Modules/key/key.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Modules/key/key.c.obj: D:/MCU/Project/plane_remote_control/Modules/key/key.c
 CMakeFiles/plane_remote_control.dir/Modules/key/key.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/plane_remote_control.dir/Modules/key/key.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Modules/key/key.c.obj -MF CMakeFiles\plane_remote_control.dir\Modules\key\key.c.obj.d -o CMakeFiles\plane_remote_control.dir\Modules\key\key.c.obj -c D:\MCU\Project\plane_remote_control\Modules\key\key.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/plane_remote_control.dir/Modules/key/key.c.obj"
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Modules/key/key.c.obj -MF CMakeFiles\plane_remote_control.dir\Modules\key\key.c.obj.d -o CMakeFiles\plane_remote_control.dir\Modules\key\key.c.obj -c D:\MCU\Project\plane_remote_control\Modules\key\key.c
 
 CMakeFiles/plane_remote_control.dir/Modules/key/key.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Modules/key/key.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Modules\key\key.c > CMakeFiles\plane_remote_control.dir\Modules\key\key.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Modules\key\key.c > CMakeFiles\plane_remote_control.dir\Modules\key\key.c.i
 
 CMakeFiles/plane_remote_control.dir/Modules/key/key.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Modules/key/key.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Modules\key\key.c -o CMakeFiles\plane_remote_control.dir\Modules\key\key.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Modules\key\key.c -o CMakeFiles\plane_remote_control.dir\Modules\key\key.c.s
 
 CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.obj: CMakeFiles/plane_remote_control.dir/flags.make
 CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.obj: D:/MCU/Project/plane_remote_control/Modules/nrf24l01/nrf24l01.c
 CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.obj: CMakeFiles/plane_remote_control.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.obj"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.obj -MF CMakeFiles\plane_remote_control.dir\Modules\nrf24l01\nrf24l01.c.obj.d -o CMakeFiles\plane_remote_control.dir\Modules\nrf24l01\nrf24l01.c.obj -c D:\MCU\Project\plane_remote_control\Modules\nrf24l01\nrf24l01.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.obj"
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.obj -MF CMakeFiles\plane_remote_control.dir\Modules\nrf24l01\nrf24l01.c.obj.d -o CMakeFiles\plane_remote_control.dir\Modules\nrf24l01\nrf24l01.c.obj -c D:\MCU\Project\plane_remote_control\Modules\nrf24l01\nrf24l01.c
 
 CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.i"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Modules\nrf24l01\nrf24l01.c > CMakeFiles\plane_remote_control.dir\Modules\nrf24l01\nrf24l01.c.i
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\MCU\Project\plane_remote_control\Modules\nrf24l01\nrf24l01.c > CMakeFiles\plane_remote_control.dir\Modules\nrf24l01\nrf24l01.c.i
 
 CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/plane_remote_control.dir/Modules/nrf24l01/nrf24l01.c.s"
-	C:\Users\fascinating_sea\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Modules\nrf24l01\nrf24l01.c -o CMakeFiles\plane_remote_control.dir\Modules\nrf24l01\nrf24l01.c.s
+	D:\Application\Work\MSYS2\ucrt64\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\MCU\Project\plane_remote_control\Modules\nrf24l01\nrf24l01.c -o CMakeFiles\plane_remote_control.dir\Modules\nrf24l01\nrf24l01.c.s
 
 # Object files for target plane_remote_control
 plane_remote_control_OBJECTS = \
@@ -305,6 +319,7 @@ plane_remote_control_OBJECTS = \
 "CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.obj" \
 "CMakeFiles/plane_remote_control.dir/startup_stm32f103xb.s.obj" \
 "CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj" \
+"CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj" \
 "CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj" \
 "CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj" \
 "CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.obj" \
@@ -338,6 +353,7 @@ plane_remote_control.elf: CMakeFiles/plane_remote_control.dir/Core/Src/sysmem.c.
 plane_remote_control.elf: CMakeFiles/plane_remote_control.dir/Core/Src/syscalls.c.obj
 plane_remote_control.elf: CMakeFiles/plane_remote_control.dir/startup_stm32f103xb.s.obj
 plane_remote_control.elf: CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj
+plane_remote_control.elf: CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj
 plane_remote_control.elf: CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj
 plane_remote_control.elf: CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj
 plane_remote_control.elf: CMakeFiles/plane_remote_control.dir/Bsp/iic/bsp_iic.c.obj
@@ -360,7 +376,7 @@ plane_remote_control.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/D
 plane_remote_control.elf: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
 plane_remote_control.elf: CMakeFiles/plane_remote_control.dir/build.make
 plane_remote_control.elf: CMakeFiles/plane_remote_control.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C executable plane_remote_control.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable plane_remote_control.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\plane_remote_control.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building hex & bin files..."
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Executable size:"

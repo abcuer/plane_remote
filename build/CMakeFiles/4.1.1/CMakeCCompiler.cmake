@@ -1,7 +1,7 @@
-set(CMAKE_C_COMPILER "C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc.exe")
+set(CMAKE_C_COMPILER "D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc.exe")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
-set(CMAKE_C_COMPILER_VERSION "10.2.1")
+set(CMAKE_C_COMPILER_VERSION "13.3.0")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")
@@ -23,11 +23,11 @@ set(CMAKE_C_COMPILER_ARCHITECTURE_ID "armv7")
 
 
 
-set(CMAKE_AR "C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-ar.exe")
-set(CMAKE_C_COMPILER_AR "C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc-ar.exe")
-set(CMAKE_RANLIB "C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-ranlib.exe")
-set(CMAKE_C_COMPILER_RANLIB "C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc-ranlib.exe")
-set(CMAKE_LINKER "C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-g++.exe")
+set(CMAKE_AR "D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-ar.exe")
+set(CMAKE_C_COMPILER_AR "D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc-ar.exe")
+set(CMAKE_RANLIB "D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-ranlib.exe")
+set(CMAKE_C_COMPILER_RANLIB "D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-gcc-ranlib.exe")
+set(CMAKE_LINKER "D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-g++.exe")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_C_COMPILER_LINKER "NOTFOUND")
@@ -78,7 +78,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/Users/fascinating_sea/.eide/tools/gcc_arm/lib/gcc/arm-none-eabi/10.2.1/include;C:/Users/fascinating_sea/.eide/tools/gcc_arm/lib/gcc/arm-none-eabi/10.2.1/include-fixed;C:/Users/fascinating_sea/.eide/tools/gcc_arm/arm-none-eabi/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "D:/Application/Work/MSYS2/ucrt64/lib/gcc/arm-none-eabi/13.3.0/include;D:/Application/Work/MSYS2/ucrt64/lib/gcc/arm-none-eabi/13.3.0/include-fixed;D:/Application/Work/MSYS2/ucrt64/arm-none-eabi/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

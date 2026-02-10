@@ -34,7 +34,7 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/fascinating_sea/.eide/tools/gcc_arm/bin/arm-none-eabi-objdump.exe")
+  set(CMAKE_OBJDUMP "D:/Application/Work/MSYS2/ucrt64/bin/arm-none-eabi-objdump.exe")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

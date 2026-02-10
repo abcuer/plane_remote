@@ -23,8 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "D:/MCU/Project/plane_remote_control/App"
   "D:/MCU/Project/plane_remote_control/App/utils"
-  "D:/MCU/Project/plane_remote_control/App/ctrl"
-  "D:/MCU/Project/plane_remote_control/App/scheduler"
+  "D:/MCU/Project/plane_remote_control/App/remote"
   "D:/MCU/Project/plane_remote_control/Bsp"
   "D:/MCU/Project/plane_remote_control/Bsp/delay"
   "D:/MCU/Project/plane_remote_control/Bsp/gpio"
@@ -44,6 +43,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/MCU/Project/plane_remote_control/App/remote/remote.c" "CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj" "gcc" "CMakeFiles/plane_remote_control.dir/App/remote/remote.c.obj.d"
   "D:/MCU/Project/plane_remote_control/App/utils/utils.c" "CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj" "gcc" "CMakeFiles/plane_remote_control.dir/App/utils/utils.c.obj.d"
   "D:/MCU/Project/plane_remote_control/Bsp/delay/bsp_delay.c" "CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj" "gcc" "CMakeFiles/plane_remote_control.dir/Bsp/delay/bsp_delay.c.obj.d"
   "D:/MCU/Project/plane_remote_control/Bsp/gpio/bsp_gpio.c" "CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj" "gcc" "CMakeFiles/plane_remote_control.dir/Bsp/gpio/bsp_gpio.c.obj.d"

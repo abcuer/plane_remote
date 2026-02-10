@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "led.h"
 #include "spi.h"
 #include "gpio.h"
 
@@ -97,8 +98,20 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    Remote_Send_Task();
+    HAL_Delay(100);
+    // if(NRF_TX_Try_Connect()==0)
+    // {
+    //   SetLedMode(rLED_UP, LED_TOGGLE);
+    //   SetLedMode(rLED_DOWN, LED_TOGGLE);
+    // }
+    // else {
+    //   SetLedMode(rLED_UP, LED_OFF);
+    //   SetLedMode(rLED_DOWN, LED_TOGGLE);
+    // }
+    // HAL_Delay(300);
     // Test_NRF24L01_Init();
-    // Key_Test_Function();
+    Key_Test_Function();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

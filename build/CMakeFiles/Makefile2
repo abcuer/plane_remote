@@ -106,12 +106,12 @@ cmake/stm32cubemx/clean: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/clean
 CMakeFiles/plane_remote_control.dir/all: cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\plane_remote_control.dir\build.make CMakeFiles/plane_remote_control.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\plane_remote_control.dir\build.make CMakeFiles/plane_remote_control.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 "Built target plane_remote_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target plane_remote_control"
 .PHONY : CMakeFiles/plane_remote_control.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/plane_remote_control.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\MCU\Project\plane_remote_control\build\CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\MCU\Project\plane_remote_control\build\CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/plane_remote_control.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\MCU\Project\plane_remote_control\build\CMakeFiles 0
 .PHONY : CMakeFiles/plane_remote_control.dir/rule
@@ -123,7 +123,7 @@ plane_remote_control: CMakeFiles/plane_remote_control.dir/rule
 # codegen rule for target.
 CMakeFiles/plane_remote_control.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\plane_remote_control.dir\build.make CMakeFiles/plane_remote_control.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 "Finished codegen for target plane_remote_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MCU\Project\plane_remote_control\build\CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Finished codegen for target plane_remote_control"
 .PHONY : CMakeFiles/plane_remote_control.dir/codegen
 
 # clean rule for target.
