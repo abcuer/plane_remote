@@ -1,9 +1,12 @@
 #include "remote.h"
 #include "headfile.h"
 #include "memory.h"
+#include "nrf24l01.h"
 
 // 遥控器的数据结构
-Remote_Data_Struct tx_data = {0}; 
+Remote_Data_Struct tx_data = {
+    .LOCK_KEY = 1,
+}; 
 RC_Frame_Struct tx_frame;   // 发送的数据帧
 /**
  * @brief 计算数据帧的校验和
@@ -46,14 +49,35 @@ static void Pack_Remote_Data(RC_Frame_Struct *frame, Remote_Data_Struct *tx_data
     frame->checksum = Calculate_Checksum(frame);
 }
 
-/**
- * @brief 遥控器数据发送任务
- * @note 建议每 20ms 调用一次
- */
+// void Remote_Send_Task(void) 
+// {
+//     // 1. 更新数据
+//     Update_TX_Data();
+//     // 2. 数据打包
+//     Pack_Remote_Data(&tx_frame, &tx_data);
+//     uint8_t result = NRF24L01_TxPacket((uint8_t*)&tx_frame);
+
+        
+//         if (result == 0) 
+//         {
+//             tx_data.CONNECT = 1;
+//             tx_data.NRF_ERR = 0;
+//         } 
+//         else 
+//         {   
+//             tx_data.CONNECT = 0;
+//             tx_data.NRF_ERR++;
+//             if(tx_data.NRF_ERR >= 50)
+//             {
+//                 NRF24L01_TX_Mode();
+//                 tx_data.NRF_ERR = 0;
+//             }
+//         }
+// }
+
 void Remote_Send_Task(void)
 {
     // 1. 更新数据
-    Stick_Scan();
     Update_TX_Data();
     // 2. 数据打包
     Pack_Remote_Data(&tx_frame, &tx_data);
@@ -64,7 +88,7 @@ void Remote_Send_Task(void)
     {
         tx_data.CONNECT = 1;
         tx_data.NRF_ERR = 0;
-        SetLedMode(rLED_UP, LED_TOGGLE);     // 上灯亮表示连接正常
+        SetLedMode(rLED_UP, LED_ON);     // 上灯亮表示连接正常
         SetLedMode(rLED_DOWN, LED_OFF);
     }
     else // 发送失败，自动重连
@@ -76,6 +100,6 @@ void Remote_Send_Task(void)
             tx_data.NRF_ERR = 0;
         }
         SetLedMode(rLED_UP, LED_OFF);
-        SetLedMode(rLED_DOWN, LED_TOGGLE); // 红灯/下灯闪烁表示断开
+        SetLedMode(rLED_DOWN, LED_ON); // 红灯/下灯闪烁表示断开
     }
 }

@@ -1,5 +1,4 @@
 #include "nrf24l01.h"
-#include "led.h"
 #include "stm32f1xx_hal.h"
 
 /* 地址定义 */
@@ -253,15 +252,15 @@ void NRF24L01_Init(void)
     while(NRF24L01_Check())
     {
         // 硬件连接失败，可以在这里加LED闪烁提示
-        SetLedMode(rLED_UP, LED_OFF);
-        SetLedMode(rLED_DOWN, LED_ON);
-        HAL_Delay(100);
+        // SetLedMode(rLED_UP, LED_OFF);
+        // SetLedMode(rLED_DOWN, LED_ON);
+        // delay_ms(10);
     }
     
     // 2. 配置为发送模式
     NRF24L01_TX_Mode();
-    SetLedMode(rLED_UP, LED_ON);
-    SetLedMode(rLED_DOWN, LED_OFF);
+    // SetLedMode(rLED_UP, LED_ON);
+    // SetLedMode(rLED_DOWN, LED_OFF);
 }
 
 /**

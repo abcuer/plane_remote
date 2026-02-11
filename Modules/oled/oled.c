@@ -234,6 +234,34 @@ void OLED_ShowFloatNum(uint8_t Line, uint8_t Column, float Number, uint8_t IntLe
 }
 
 /**
+  * @brief  绘制紧凑型进度条 (高度 8 像素，占用 1 个 Page)
+  * @param  Page   页坐标 (0~7)
+  * @param  Column 像素列坐标 (0~127)
+  * @param  Width  条形图总像素宽度
+  * @param  Value  当前数值 (1000~2000)
+  */
+void OLED_DrawCompactBar(uint8_t Page, uint8_t Column, uint8_t Width, int32_t Value)
+{
+    if (Value < 1000) Value = 1000;
+    if (Value > 2000) Value = 2000;
+    
+    // 计算填充长度
+    uint8_t fillWidth = (uint8_t)((Value - 1000) * Width / 1000);
+    
+    OLED_SetCursor(Page, Column);
+    for (uint8_t i = 0; i < Width; i++)
+    {
+        if (i == 0 || i == Width - 1) 
+            OLED_WriteData(0xFF); // 左右边界
+        else if (i == Width / 2) 
+            OLED_WriteData(0xDB); // 中轴线 (1500)
+        else if (i < fillWidth) 
+            OLED_WriteData(0xBD); // 已填充部分 (上下实线)
+        else 
+            OLED_WriteData(0x81); // 未填充部分 (仅上下边框)
+    }
+}
+/**
   * @brief  OLED初始化
   */
 void OLED_Init(void)

@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "cmsis_os.h"
 #include "adc.h"
 #include "dma.h"
 #include "spi.h"
@@ -52,6 +53,7 @@
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -97,34 +99,19 @@ int main(void)
   System_Init();
   /* USER CODE END 2 */
 
+  /* Call init function for freertos objects (in cmsis_os2.c) */
+  MX_FREERTOS_Init();
+
+  /* Start scheduler */
+  osKernelStart();
+
+  /* We should never get here as control is now taken by the scheduler */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    // OLED_ShowString(2, 3, "Hello World");
-    Remote_Send_Task();
-    OLED_ShowSignedNum(1,3, tx_data.THR, 4);
-    OLED_ShowSignedNum(2,3, tx_data.YAW, 4);
-    OLED_ShowSignedNum(3,3, tx_data.PIT, 4);
-    OLED_ShowSignedNum(4,3, tx_data.ROL, 4);
-    OLED_ShowSignedNum(4,9, tx_data.LOCK_KEY, 2);
-    // 修正参数个数：行, 列, 数值, 整数位长度, 小数位长度
-// 如果 stick.BAT 是 840，通过 /100.0f 变成 8.40 浮点数
-  OLED_ShowFloatNum(1, 10, (float)stick.BAT / 100.0f, 1, 2);
-    delay_ms(10);
-    // Key_Test_Function();
-    // if(NRF_TX_Try_Connect()==0)
-    // {
-    //   SetLedMode(rLED_UP, LED_TOGGLE);
-    //   SetLedMode(rLED_DOWN, LED_TOGGLE);
-    // }
-    // else {
-    //   SetLedMode(rLED_UP, LED_OFF);
-    //   SetLedMode(rLED_DOWN, LED_TOGGLE);
-    // }
-    // HAL_Delay(300);
-    // Test_NRF24L01_Init();
-
+    
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -181,6 +168,28 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 
 /* USER CODE END 4 */
+
+/**
+  * @brief  Period elapsed callback in non blocking mode
+  * @note   This function is called  when TIM4 interrupt took place, inside
+  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+  * a global variable "uwTick" used as application time base.
+  * @param  htim : TIM handle
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* USER CODE BEGIN Callback 0 */
+
+  /* USER CODE END Callback 0 */
+  if (htim->Instance == TIM4)
+  {
+    HAL_IncTick();
+  }
+  /* USER CODE BEGIN Callback 1 */
+
+  /* USER CODE END Callback 1 */
+}
 
 /**
   * @brief  This function is executed in case of error occurrence.

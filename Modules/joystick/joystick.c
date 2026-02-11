@@ -78,8 +78,6 @@ void Stick_Scan(void)
 	stick.BAT =(uint16_t)(2.0f*ADC_ConvertedValue[4]/ADC_ConvertedValue[5]*1.2f*100)+44;  
     
     Stick_Filter(&stick);
-    // Stick_Mid_Limit(&stick);
-    // TX_Limit(&stick);
 }
 
 // 10ms
@@ -90,7 +88,7 @@ void Update_TX_Data(void)
     tx_data.YAW = stick.YAW;
     tx_data.PIT = stick.PIT;
     tx_data.ROL = stick.ROL;
-    Key_Scan();
+    // Key_Scan();
     // 遥控器断联 / tx_data.LOCK_KEY为1，tx_data.THR = 1000;
     if(tx_data.LOCK_KEY) tx_data.THR = 1000;
     TX_Limit(&tx_data);
