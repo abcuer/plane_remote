@@ -110,7 +110,7 @@ int main(void)
     OLED_ShowSignedNum(4,9, tx_data.LOCK_KEY, 2);
     // 修正参数个数：行, 列, 数值, 整数位长度, 小数位长度
 // 如果 stick.BAT 是 840，通过 /100.0f 变成 8.40 浮点数
-OLED_ShowFloat(1, 10, (float)stick.BAT / 100.0f, 1, 2);
+  OLED_ShowFloatNum(1, 10, (float)stick.BAT / 100.0f, 1, 2);
     delay_ms(10);
     // Key_Test_Function();
     // if(NRF_TX_Try_Connect()==0)
