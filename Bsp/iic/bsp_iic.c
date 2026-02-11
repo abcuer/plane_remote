@@ -124,24 +124,51 @@ void IICStop(iic_bus_t *bus)
 unsigned char IICWaitAck(iic_bus_t *bus)
 {
     unsigned short cErrTime = 5;
-    SDA_Input_Mode(bus);
-    SCL_Output(bus,1);
+    
+    // --- 关键补充：读取前释放 SDA ---
+    SDA_Output(bus, 1); 
+    
+    SCL_Output(bus, 1);
+    delay_us(1); // 给电平建立一点时间
+    
     while(SDA_Input(bus))
     {
         cErrTime--;
-				delay_us(1);
+        delay_us(1);
         if (0 == cErrTime)
         {
-            SDA_Output_Mode(bus);
+            // 这里建议直接 Stop，不需要重新设置 Mode
             IICStop(bus);
             return ERROR;
         }
     }
-    SDA_Output_Mode(bus);
-    SCL_Output(bus,0);
-		delay_us(2);
+    
+    SCL_Output(bus, 0);
+    delay_us(2);
     return SUCCESS;
 }
+// unsigned char IICWaitAck(iic_bus_t *bus)
+// {
+//     unsigned short cErrTime = 5;
+//     // SDA_Input_Mode(bus);
+//     SDA_Output(bus, 1);
+//     SCL_Output(bus,1);
+//     while(SDA_Input(bus))
+//     {
+//         cErrTime--;
+// 				delay_us(1);
+//         if (0 == cErrTime)
+//         {
+//             SDA_Output_Mode(bus);
+//             IICStop(bus);
+//             return ERROR;
+//         }
+//     }
+//     // SDA_Output_Mode(bus);
+//     SCL_Output(bus,0);
+// 		delay_us(2);
+//     return SUCCESS;
+// }
 
 /**
   * @brief IIC发送确认信号
@@ -203,24 +230,47 @@ void IICSendByte(iic_bus_t *bus,unsigned char cSendByte)
   * @param None
   * @retval 接收到的字节
   */
-unsigned char IICReceiveByte(iic_bus_t *bus)
+  unsigned char IICReceiveByte(iic_bus_t *bus)
 {
     unsigned char i = 8;
     unsigned char cR_Byte = 0;
-    SDA_Input_Mode(bus);
+
+    // --- 关键补充：接收前释放 SDA ---
+    SDA_Output(bus, 1); 
+
     while (i--)
     {
-        cR_Byte += cR_Byte;
-        SCL_Output(bus,0);
-				delay_us(2);
-        SCL_Output(bus,1);
-				delay_us(1);
-        cR_Byte |=  SDA_Input(bus);
+        cR_Byte <<= 1; 
+        SCL_Output(bus, 0);
+        delay_us(2);
+        SCL_Output(bus, 1);
+        delay_us(1);
+        
+        if(SDA_Input(bus))
+            cR_Byte |= 0x01;
     }
-    SCL_Output(bus,0);
-    SDA_Output_Mode(bus);
+    SCL_Output(bus, 0);
     return cR_Byte;
 }
+// unsigned char IICReceiveByte(iic_bus_t *bus)
+// {
+//     unsigned char i = 8;
+//     unsigned char cR_Byte = 0;
+//     // SDA_Input_Mode(bus);
+//     SDA_Output(bus, 1);
+//     while (i--)
+//     {
+//         cR_Byte += cR_Byte;
+//         SCL_Output(bus,0);
+// 				delay_us(2);
+//         SCL_Output(bus,1);
+// 				delay_us(1);
+//         cR_Byte |=  SDA_Input(bus);
+//     }
+//     SCL_Output(bus,0);
+//     // SDA_Output_Mode(bus);
+//     return cR_Byte;
+// }
 
 uint8_t IIC_Write_One_Byte(iic_bus_t *bus, uint8_t daddr,uint8_t reg,uint8_t data)
 {				   	  	    																 

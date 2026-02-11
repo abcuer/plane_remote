@@ -80,7 +80,9 @@ USER_ADD_DIR(${CMAKE_SOURCE_DIR}/Modules)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/Modules/led)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/Modules/beep)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/Modules/key)
+USER_ADD_DIR(${CMAKE_SOURCE_DIR}/Modules/oled)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/Modules/nrf24l01)
+USER_ADD_DIR(${CMAKE_SOURCE_DIR}/Modules/joystick)
 USER_ADD_DIR(${CMAKE_SOURCE_DIR}/Modules/algorithm)
 
 # ---------------- 链接选项（newlib-nano + printf浮点支持） -----------------

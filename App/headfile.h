@@ -16,7 +16,9 @@
 #include "led.h"
 #include "beep.h"
 #include "key.h"
+#include "oled.h"
 #include "nrf24l01.h"
+#include "joystick.h"
 
 /***************** App ****************/
 #include "utils.h"

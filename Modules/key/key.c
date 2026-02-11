@@ -1,6 +1,8 @@
 #include "key.h"
+#include "remote.h"
+#include "led.h"
+#include "beep.h"
 #include "bsp_gpio.h"
-#include "gpio.h"
 
 static KEYInstance key[KEY_NUM];
 
@@ -135,3 +137,24 @@ void KeyDeviceInit(void)
     Key_Init(&config, K12_SET); 
 }
 
+void Key_Scan(void)
+{
+    static uint8_t is_locked = 0; 
+    
+    // 这里建议 Key_GetNum 采用非阻塞的触发模式
+    if (Key_GetNum(K11_LOCK) == 1) // 检测到触发动作
+    {
+        is_locked = !is_locked; // 状态取反：0变1, 1变0
+    }
+
+    if (is_locked) 
+    {
+        tx_data.LOCK_KEY = 1;
+        SetLedMode(rLED_DOWN, LED_ON);
+    }
+    else
+    {
+        tx_data.LOCK_KEY = 0;
+        SetLedMode(rLED_DOWN, LED_OFF);
+    }
+}

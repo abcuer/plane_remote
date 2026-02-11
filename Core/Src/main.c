@@ -18,7 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "led.h"
+#include "adc.h"
+#include "dma.h"
 #include "spi.h"
 #include "gpio.h"
 
@@ -89,7 +90,9 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_SPI1_Init();
+  MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
   System_Init();
   /* USER CODE END 2 */
@@ -98,8 +101,18 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    // OLED_ShowString(2, 3, "Hello World");
     Remote_Send_Task();
-    HAL_Delay(100);
+    OLED_ShowSignedNum(1,3, tx_data.THR, 4);
+    OLED_ShowSignedNum(2,3, tx_data.YAW, 4);
+    OLED_ShowSignedNum(3,3, tx_data.PIT, 4);
+    OLED_ShowSignedNum(4,3, tx_data.ROL, 4);
+    OLED_ShowSignedNum(4,9, tx_data.LOCK_KEY, 2);
+    // 修正参数个数：行, 列, 数值, 整数位长度, 小数位长度
+// 如果 stick.BAT 是 840，通过 /100.0f 变成 8.40 浮点数
+OLED_ShowFloat(1, 10, (float)stick.BAT / 100.0f, 1, 2);
+    delay_ms(10);
+    // Key_Test_Function();
     // if(NRF_TX_Try_Connect()==0)
     // {
     //   SetLedMode(rLED_UP, LED_TOGGLE);
@@ -111,7 +124,7 @@ int main(void)
     // }
     // HAL_Delay(300);
     // Test_NRF24L01_Init();
-    Key_Test_Function();
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -127,6 +140,7 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
@@ -153,6 +167,12 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
+  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV6;
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
   }

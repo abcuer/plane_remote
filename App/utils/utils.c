@@ -1,5 +1,6 @@
 #include "headfile.h"
 #include "bsp_delay.h"
+#include "joystick.h"
 #include "led.h"
 
 /**
@@ -12,8 +13,10 @@ void System_Init(void)
     LedDevice_Init();
     BeepDeviceInit();
     KeyDeviceInit();
+    JoyStick_Init();
+    OLED_Init();
     NRF24L01_Init();
-    HAL_Delay(100);
+    delay_ms(100);
     // NRF24L01_init();
 
     // SPL06_Init();

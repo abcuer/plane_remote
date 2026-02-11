@@ -63,6 +63,14 @@ void Error_Handler(void);
 #define K9_P_GPIO_Port GPIOC
 #define K10_M_Pin GPIO_PIN_15
 #define K10_M_GPIO_Port GPIOC
+#define ROL_Pin GPIO_PIN_0
+#define ROL_GPIO_Port GPIOA
+#define PIT_Pin GPIO_PIN_1
+#define PIT_GPIO_Port GPIOA
+#define YAW_Pin GPIO_PIN_2
+#define YAW_GPIO_Port GPIOA
+#define THR_Pin GPIO_PIN_3
+#define THR_GPIO_Port GPIOA
 #define NRF_CSN_Pin GPIO_PIN_4
 #define NRF_CSN_GPIO_Port GPIOA
 #define NRF_SCK_Pin GPIO_PIN_5
@@ -71,6 +79,8 @@ void Error_Handler(void);
 #define NRF_MISO_GPIO_Port GPIOA
 #define NRF_MOSI_Pin GPIO_PIN_7
 #define NRF_MOSI_GPIO_Port GPIOA
+#define BAT_Pin GPIO_PIN_0
+#define BAT_GPIO_Port GPIOB
 #define rLED_UP_Pin GPIO_PIN_1
 #define rLED_UP_GPIO_Port GPIOB
 #define BEEP_Pin GPIO_PIN_10
@@ -95,6 +105,10 @@ void Error_Handler(void);
 #define K4_BACK_GPIO_Port GPIOB
 #define K5_RIGHT_Pin GPIO_PIN_6
 #define K5_RIGHT_GPIO_Port GPIOB
+#define OLED_SDA_Pin GPIO_PIN_7
+#define OLED_SDA_GPIO_Port GPIOB
+#define OLED_SCL_Pin GPIO_PIN_8
+#define OLED_SCL_GPIO_Port GPIOB
 #define K12_SET_Pin GPIO_PIN_9
 #define K12_SET_GPIO_Port GPIOB
 

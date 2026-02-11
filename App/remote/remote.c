@@ -1,11 +1,9 @@
 #include "remote.h"
-#include "beep.h"
-#include "led.h"
-#include "nrf24l01.h"
+#include "headfile.h"
 #include "memory.h"
 
 // 遥控器的数据结构
-RC_Data_Struct tx_data = {0}; 
+Remote_Data_Struct tx_data = {0}; 
 RC_Frame_Struct tx_frame;   // 发送的数据帧
 /**
  * @brief 计算数据帧的校验和
@@ -28,7 +26,7 @@ static uint8_t Calculate_Checksum(RC_Frame_Struct *frame)
  * @param frame 输出数据帧
  * @param tx_data 输入遥控数据
  */
-static void Pack_Remote_Data(RC_Frame_Struct *frame, RC_Data_Struct *tx_data)
+static void Pack_Remote_Data(RC_Frame_Struct *frame, Remote_Data_Struct *tx_data)
 {
     memset(frame, 0, sizeof(RC_Frame_Struct));
     // 设置帧头
@@ -54,24 +52,13 @@ static void Pack_Remote_Data(RC_Frame_Struct *frame, RC_Data_Struct *tx_data)
  */
 void Remote_Send_Task(void)
 {
-    // 1. 更新数据 (这里假设你已经有函数获取了摇杆的 ADC 值并转化为了 1000-2000)
-    // 示例：获取摇杆数据（需根据你的硬件实现）
-    // remote_data.THR = Get_Joystick_Value(CH_THR); 
-    // remote_data.ROL = Get_Joystick_Value(CH_ROL);
-    // ...以此类推
-    tx_data.THR = 1090;
-    Limit(tx_data.THR, 1000, 2000);
-    Limit(tx_data.PIT, 1000, 2000);
-    Limit(tx_data.ROL, 1000, 2000);
-    Limit(tx_data.YAW, 1000, 2000);
+    // 1. 更新数据
+    Stick_Scan();
+    Update_TX_Data();
     // 2. 数据打包
-    // 函数内部会自动清零 tx_frame 并填充帧头、通道数据及计算校验和
     Pack_Remote_Data(&tx_frame, &tx_data);
-    
     // 3. 触发无线发送
-    // NRF24L01_TxPacket 会负责将 tx_frame 发送出去并等待接收端的 ACK
     uint8_t result = NRF24L01_TxPacket((uint8_t*)&tx_frame);
-    
     // 4. 状态指示
     if (result == 0) // 发送成功且收到应答
     {
