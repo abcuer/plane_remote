@@ -1,5 +1,6 @@
 #include "remote.h"
 #include "headfile.h"
+#include "led.h"
 #include "memory.h"
 #include "nrf24l01.h"
 
@@ -29,7 +30,7 @@ static uint8_t Calculate_Checksum(RC_Frame_Struct *frame)
  * @param frame 输出数据帧
  * @param tx_data 输入遥控数据
  */
-static void Pack_Remote_Data(RC_Frame_Struct *frame, Remote_Data_Struct *tx_data)
+static void Remote_PackData(RC_Frame_Struct *frame, Remote_Data_Struct *tx_data)
 {
     memset(frame, 0, sizeof(RC_Frame_Struct));
     // 设置帧头
@@ -49,57 +50,40 @@ static void Pack_Remote_Data(RC_Frame_Struct *frame, Remote_Data_Struct *tx_data
     frame->checksum = Calculate_Checksum(frame);
 }
 
-// void Remote_Send_Task(void) 
-// {
-//     // 1. 更新数据
-//     Update_TX_Data();
-//     // 2. 数据打包
-//     Pack_Remote_Data(&tx_frame, &tx_data);
-//     uint8_t result = NRF24L01_TxPacket((uint8_t*)&tx_frame);
+static uint8_t success_cnt = 0;
+static uint8_t fail_cnt = 0;
 
-        
-//         if (result == 0) 
-//         {
-//             tx_data.CONNECT = 1;
-//             tx_data.NRF_ERR = 0;
-//         } 
-//         else 
-//         {   
-//             tx_data.CONNECT = 0;
-//             tx_data.NRF_ERR++;
-//             if(tx_data.NRF_ERR >= 50)
-//             {
-//                 NRF24L01_TX_Mode();
-//                 tx_data.NRF_ERR = 0;
-//             }
-//         }
-// }
-
-void Remote_Send_Task(void)
+void Remote_SendData(void)
 {
-    // 1. 更新数据
+    // 更新数据
     Update_TX_Data();
-    // 2. 数据打包
-    Pack_Remote_Data(&tx_frame, &tx_data);
-    // 3. 触发无线发送
+    // 打包数据
+    Remote_PackData(&tx_frame, &tx_data);
+    // 发送数据
     uint8_t result = NRF24L01_TxPacket((uint8_t*)&tx_frame);
-    // 4. 状态指示
-    if (result == 0) // 发送成功且收到应答
+    // 状态指示
+    if (result == 0)
     {
-        tx_data.CONNECT = 1;
-        tx_data.NRF_ERR = 0;
-        SetLedMode(rLED_UP, LED_ON);     // 上灯亮表示连接正常
-        SetLedMode(rLED_DOWN, LED_OFF);
-    }
-    else // 发送失败，自动重连
-    {
-        tx_data.CONNECT = 0;
-        tx_data.NRF_ERR++;
-        if (tx_data.NRF_ERR > 50) { // 连续失败 50 次
-            NRF24L01_TX_Mode(); // 重新初始化寄存器
+        success_cnt++;
+        fail_cnt = 0;
+        if(success_cnt >= 2)  
+        {
+            tx_data.CONNECT = 1;
             tx_data.NRF_ERR = 0;
         }
-        SetLedMode(rLED_UP, LED_OFF);
-        SetLedMode(rLED_DOWN, LED_ON); // 红灯/下灯闪烁表示断开
+    }
+    else
+    {
+        fail_cnt++;
+        success_cnt = 0;
+        if(fail_cnt >= 10) 
+        {
+            tx_data.CONNECT = 0;
+            tx_data.NRF_ERR++;
+            if (tx_data.NRF_ERR > 50) { // 连续失败 50 次
+                NRF24L01_TX_Mode();     // 重新连接
+                tx_data.NRF_ERR = 0;
+            }
+        }
     }
 }

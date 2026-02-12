@@ -59,6 +59,6 @@ typedef struct {
 /* 外部调用接口 */
 void KeyDeviceInit(void);
 uint8_t Key_GetNum(KEY_Type_e KeyType);
-void Key_Scan(void);
+void KeyScan(void);
 
 #endif

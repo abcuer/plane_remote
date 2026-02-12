@@ -31,7 +31,7 @@ typedef struct __attribute__((packed)){ // 强制编译器取消对齐补齐
     uint8_t checksum;    // 校验和
 } RC_Frame_Struct;
 
-void Remote_Send_Task(void);
+void Remote_SendData(void);
 
 extern Remote_Data_Struct tx_data;
 

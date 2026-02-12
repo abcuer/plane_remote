@@ -10,7 +10,8 @@ typedef enum {
 void System_Init(void);
 void Key_Test_Function(void);
 void Test_NRF24L01_Init(void);
-void DataShow(void);
+void ShowData(void);
+void LedScan(void);
 
 extern volatile Device_Action_t g_device_action;
 

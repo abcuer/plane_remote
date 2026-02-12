@@ -14,15 +14,30 @@ static const LEDInstance *GetLedInstance(LED_Type_e LedType)
 /**
  * @brief 根据当前状态更新GPIO电平
  */
-static void UpdatePinLevel(LED_Type_e LedType)
+ static void UpdatePinLevel(LED_Type_e LedType)
 {
     LEDInstance *instance = &led[LedType];
-    // 逻辑：状态与有效电平相同则置位，不同则复位
-    GPIO_PinState pinState = (instance->RunningParam.CurrentMode == instance->StaticParam.ActiveLevel) ? 
-                              GPIO_PIN_SET : GPIO_PIN_RESET;
+    GPIO_PinState pinState;
+
+    if (instance->RunningParam.CurrentMode == LED_ON) {
+        // 如果逻辑要点亮，输出配置的有效电平
+        pinState = (instance->StaticParam.ActiveLevel == LED_HIGH_LEVEL_ON) ? GPIO_PIN_SET : GPIO_PIN_RESET;
+    } else {
+        // 如果逻辑要熄灭，输出有效电平的反向电平
+        pinState = (instance->StaticParam.ActiveLevel == LED_HIGH_LEVEL_ON) ? GPIO_PIN_RESET : GPIO_PIN_SET;
+    }
     
     HAL_GPIO_WritePin(instance->StaticParam.GPIO_Port, instance->StaticParam.GPIO_Pin, pinState);
 }
+// static void UpdatePinLevel(LED_Type_e LedType)
+// {
+//     LEDInstance *instance = &led[LedType];
+//     // 逻辑：状态与有效电平相同则置位，不同则复位
+//     GPIO_PinState pinState = (instance->RunningParam.CurrentMode == instance->StaticParam.ActiveLevel) ? 
+//                               GPIO_PIN_SET : GPIO_PIN_RESET;
+    
+//     HAL_GPIO_WritePin(instance->StaticParam.GPIO_Port, instance->StaticParam.GPIO_Pin, pinState);
+// }
 
 /**
  * @brief 设置LED状态

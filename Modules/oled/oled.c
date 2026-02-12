@@ -235,7 +235,7 @@ void OLED_ShowFloatNum(uint8_t Line, uint8_t Column, float Number, uint8_t IntLe
 
 /**
   * @brief  绘制紧凑型进度条 (高度 8 像素，占用 1 个 Page)
-  * @param  Page   页坐标 (0~7)
+  * @param  Page   页坐标 (0~4)
   * @param  Column 像素列坐标 (0~127)
   * @param  Width  条形图总像素宽度
   * @param  Value  当前数值 (1000~2000)
@@ -261,6 +261,32 @@ void OLED_DrawCompactBar(uint8_t Page, uint8_t Column, uint8_t Width, int32_t Va
             OLED_WriteData(0x81); // 未填充部分 (仅上下边框)
     }
 }
+
+/**
+  * @brief  OLED反相显示字符串
+  * @param  Line 起始行位置，范围：1~4
+  * @param  Column 起始列位置，范围：1~16
+  * @param  String 要显示的字符串
+  */
+  
+void OLED_ShowStringReverse(uint8_t Line, uint8_t Column, char *String)
+{
+    uint8_t i, j;
+    for (i = 0; String[i] != '\0'; i++)
+    {
+        char Char = String[i];
+        // 显示上半部分 (取反)
+        OLED_SetCursor((Line - 1) * 2, (Column - 1 + i) * 8);
+        for (j = 0; j < 8; j++) 
+            OLED_WriteData(~OLED_F8x16[Char - ' '][j]);
+            
+        // 显示下半部分 (取反)
+        OLED_SetCursor((Line - 1) * 2 + 1, (Column - 1 + i) * 8);
+        for (j = 0; j < 8; j++) 
+            OLED_WriteData(~OLED_F8x16[Char - ' '][j + 8]);
+    }
+}
+
 /**
   * @brief  OLED初始化
   */

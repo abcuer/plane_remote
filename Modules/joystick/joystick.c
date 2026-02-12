@@ -90,7 +90,13 @@ void Update_TX_Data(void)
     tx_data.ROL = stick.ROL;
     // Key_Scan();
     // 遥控器断联 / tx_data.LOCK_KEY为1，tx_data.THR = 1000;
-    if(tx_data.LOCK_KEY) tx_data.THR = 1000;
+    if(tx_data.LOCK_KEY)
+	{
+		tx_data.THR = 1000;
+		tx_data.PIT = 1000;
+		tx_data.ROL = 1000;
+		tx_data.YAW = 1000;
+	} 
     TX_Limit(&tx_data);
     // OLED显示数据
 }

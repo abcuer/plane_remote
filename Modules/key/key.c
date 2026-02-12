@@ -1,6 +1,7 @@
 #include "key.h"
 #include "beep.h"
 #include "headfile.h"
+#include "led.h"
 
 static KEYInstance key[KEY_NUM];
 
@@ -135,22 +136,51 @@ void KeyDeviceInit(void)
     Key_Init(&config, K12_SET); 
 }
 
-void Key_Scan(void)
+void KeyScan(void)
 {
     static uint8_t is_locked = 1; 
-    
-    // 这里建议 Key_GetNum 采用非阻塞的触发模式
-    if (Key_GetNum(K11_LOCK) == 1) // 检测到触发动作
+    static uint8_t beep_timer = 0; // 蜂鸣器剩余鸣叫时间计数
+
+    // 检测按键触发
+    if (Key_GetNum(K11_LOCK) == 1) 
     {
-        is_locked = !is_locked; // 状态取反：0变1, 1变0
+        is_locked = !is_locked;
+        tx_data.LOCK_KEY = is_locked ? 1 : 0;
+        
+        // 触发鸣叫：设置计数
+        SetBeepMode(BEEP, BEEP_ON);
+        SetLedMode(rLED_DOWN, LED_ON);
+        beep_timer = 5;
     }
 
-    if (is_locked) 
+    // 自动关闭逻辑
+    if (beep_timer > 0) 
     {
-        tx_data.LOCK_KEY = 1;
-    }
-    else
-    {
-        tx_data.LOCK_KEY = 0;
+        beep_timer--;
+        if (beep_timer == 0) 
+        {
+            SetBeepMode(BEEP, BEEP_OFF);
+            SetLedMode(rLED_DOWN, LED_OFF);
+        }
     }
 }
+
+// void Key_Scan(void)
+// {
+//     static uint8_t is_locked = 1; 
+    
+//     // 这里建议 Key_GetNum 采用非阻塞的触发模式
+//     if (Key_GetNum(K11_LOCK) == 1) // 检测到触发动作
+//     {
+//         is_locked = !is_locked; // 状态取反：0变1, 1变0
+//     }
+
+//     if (is_locked) 
+//     {
+//         tx_data.LOCK_KEY = 1;
+//     }
+//     else
+//     {
+//         tx_data.LOCK_KEY = 0;
+//     }
+// }

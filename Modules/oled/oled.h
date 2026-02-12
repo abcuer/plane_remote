@@ -21,5 +21,6 @@ void OLED_ShowHexNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Leng
 void OLED_ShowBinNum(uint8_t Line, uint8_t Column, uint32_t Number, uint8_t Length);
 void OLED_ShowFloatNum(uint8_t Line, uint8_t Column, float Number, uint8_t IntLength, uint8_t FraLength);
 void OLED_DrawCompactBar(uint8_t Page, uint8_t Column, uint8_t Width, int32_t Value);
+void OLED_ShowStringReverse(uint8_t Line, uint8_t Column, char *String);
 
 #endif
