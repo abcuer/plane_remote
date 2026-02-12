@@ -4,7 +4,7 @@
 #define STICK_PERIOD 2
 #define COMM_PERIOD 6
 #define KEY_PERIOD 10
-#define SHOW_PERIOD 20
+#define SHOW_PERIOD 15
 
 void StartStickTask(void const * argument)
 {
