@@ -64,6 +64,7 @@ void Remote_SendData(void)
     // 状态指示
     if (result == 0)
     {
+        if(tx_data.CONNECT == 1)    return;
         success_cnt++;
         fail_cnt = 0;
         if(success_cnt >= 2)  

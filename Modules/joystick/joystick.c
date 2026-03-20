@@ -16,10 +16,10 @@ void JoyStick_Init(void)
 //消除中值漂移误差（油门位最低位零漂）
 static void Stick_Mid_Limit(Stick_Struct *stick)
 {
-	if(stick->THR>995  && stick->THR<1005) stick->THR = 1000;
-	if(stick->YAW>1470 && stick->YAW<1520) stick->YAW = 1500;
-    if(stick->PIT>1470 && stick->PIT<1520) stick->PIT = 1500;
-	if(stick->ROL>1470 && stick->ROL<1520) stick->ROL = 1500;
+	if(stick->THR>998  && stick->THR<1004) stick->THR = 1000;
+	if(stick->YAW>1510 && stick->YAW<1520) stick->YAW = 1500;
+    if(stick->PIT>1500 && stick->PIT<1510) stick->PIT = 1500;
+	if(stick->ROL>1470 && stick->ROL<1480) stick->ROL = 1500;
 }
 
 // static void TX_Limit(Stick_Struct *tx_data)
@@ -93,9 +93,9 @@ void Update_TX_Data(void)
     if(tx_data.LOCK_KEY)
 	{
 		tx_data.THR = 1000;
-		tx_data.PIT = 1000;
-		tx_data.ROL = 1000;
-		tx_data.YAW = 1000;
+		tx_data.PIT = 1500;
+		tx_data.ROL = 1500;
+		tx_data.YAW = 1500;
 	} 
     TX_Limit(&tx_data);
     // OLED显示数据

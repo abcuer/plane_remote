@@ -48,11 +48,10 @@
 
 /* USER CODE END Variables */
 
-osThreadId stickTaskHandle;
+// osThreadId stickTaskHandle;
 osThreadId commTaskHandle; 
 osThreadId keyTaskHandle;
 osThreadId showTaskHandle;
-// osThreadId ledTaskHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -107,16 +106,16 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-  osThreadDef(stickTask, StartStickTask, osPriorityHigh, 0, 128);
-  stickTaskHandle = osThreadCreate(osThread(stickTask), NULL);
+  // osThreadDef(stickTask, StartStickTask, osPriorityRealtime, 0, 128);
+  // stickTaskHandle = osThreadCreate(osThread(stickTask), NULL);
 
-  osThreadDef(commonTask, StartCommonTask, osPriorityHigh, 0, 256);
+  osThreadDef(commonTask, StartCommonTask, osPriorityRealtime, 0, 256);
   commTaskHandle = osThreadCreate(osThread(commonTask), NULL);
 
   osThreadDef(keyTask, StartKeyTask, osPriorityHigh, 0, 128);
   keyTaskHandle = osThreadCreate(osThread(keyTask), NULL);
 
-  osThreadDef(showTask, StartShowTask, osPriorityAboveNormal, 0, 256);
+  osThreadDef(showTask, StartShowTask, osPriorityHigh, 0, 256);
   showTaskHandle = osThreadCreate(osThread(showTask), NULL);
 
   // osThreadDef(ledTask, StartLedTask, osPriorityNormal, 0, 128);

@@ -14,7 +14,7 @@ void System_Init(void)
     KeyDeviceInit();
     JoyStick_Init();
     NRF24L01_Init();
-    OLED_Init();
+    U8G2_Init();
 
     SetLedMode(rLED_UP, LED_ON);
     SetLedMode(rLED_DOWN, LED_ON);
@@ -38,34 +38,6 @@ void LedScan(void)
         SetLedMode(rLED_DOWN, LED_ON);
     }
 }
-
-void ShowData(void)
-{
-     // 定义参数数组
-    char labels[] = {'T', 'Y', 'P', 'R'};
-    int32_t values[] = {tx_data.THR, tx_data.YAW, tx_data.PIT, tx_data.ROL};
-    
-    for(uint8_t i = 0; i < 4; i++) 
-    {
-        OLED_ShowChar(i + 1, 1, labels[i]);
-        OLED_DrawCompactBar(i * 2, 12, 25, values[i]);
-        OLED_ShowNum(i + 1, 6, values[i], 4);
-    }
-
-    // --- 右侧剩余空间显示系统信息 ---
-    
-    // 电压：显示在第二行末尾 (Line 2, Col 12)
-    OLED_ShowFloatNum(2, 12, (float)stick.BAT / 100.0f, 1, 2);
-    OLED_ShowChar(2, 16, 'V');
-
-    // 锁定状态：显示在第四行末尾
-    if(tx_data.LOCK_KEY > 0) {
-        OLED_ShowStringReverse(4, 13, "LCK"); 
-    } else {
-        OLED_ShowString(4, 13, "ACT");
-    }
-}
-
 
 
 

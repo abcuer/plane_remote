@@ -142,7 +142,7 @@ void KeyScan(void)
     static uint8_t beep_timer = 0; // 蜂鸣器剩余鸣叫时间计数
 
     // 检测按键触发
-    if (Key_GetNum(K11_LOCK) == 1) 
+    if (Key_GetNum(K11_LOCK)) 
     {
         is_locked = !is_locked;
         tx_data.LOCK_KEY = is_locked ? 1 : 0;

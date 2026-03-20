@@ -3,6 +3,7 @@
 
 #include "stm32f1xx_hal.h"
 #include "stdint.h"
+#include "stdio.h"
 
 /***************** App ****************/
 #include "main.h"
@@ -11,7 +12,7 @@
 /***************** Bsp ****************/
 #include "bsp_gpio.h"
 #include "bsp_iic.h"
-#include "bsp_delay.h"
+#include "bsp_dwt.h"
 /***************** Modules ****************/
 #include "led.h"
 #include "beep.h"
@@ -23,6 +24,8 @@
 /***************** App ****************/
 #include "utils.h"
 #include "remote.h"
+#include "ui.h"
+
 #include "freertos.h"
 #include "task.h"
 #include "cmsis_os.h"
