@@ -9,7 +9,6 @@ void StartCommonTask(void const * argument)
 {
     for(;;)
     {
-        Stick_Scan();
         Remote_SendData();
         osDelay(COMM_PERIOD);
     }

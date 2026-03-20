@@ -56,6 +56,7 @@ static uint8_t fail_cnt = 0;
 void Remote_SendData(void)
 {
     // 更新数据
+    Stick_Scan();
     Update_TX_Data();
     // 打包数据
     Remote_PackData(&tx_frame, &tx_data);
@@ -64,7 +65,7 @@ void Remote_SendData(void)
     // 状态指示
     if (result == 0)
     {
-        if(tx_data.CONNECT == 1)    return;
+        // if(tx_data.CONNECT == 1)    return;
         success_cnt++;
         fail_cnt = 0;
         if(success_cnt >= 2)  
