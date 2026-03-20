@@ -23,7 +23,7 @@ static void Stick_Mid_Limit(Stick_Struct *stick)
 }
 
 // static void TX_Limit(Stick_Struct *tx_data)
-static void TX_Limit(Remote_Data_Struct *tx_data)
+static void TX_Limit(TX_Data_Struct *tx_data)
 {
     tx_data->THR = Limit(tx_data->THR, 1000, 2000);
     tx_data->PIT = Limit(tx_data->PIT, 1000, 2000);

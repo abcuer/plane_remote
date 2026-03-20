@@ -197,7 +197,7 @@ uint8_t NRF24L01_Check(void)
     return 0; // 成功
 }
 
-static void NRF_Init(uint8_t model, uint8_t ch)
+void NRF_Init(uint8_t model, uint8_t ch)
 {
 	Clr_NRF24L01_CE;
 	
@@ -249,16 +249,11 @@ static void NRF_Init(uint8_t model, uint8_t ch)
 void NRF24L01_Init(void)
 {
     // 1. 检查硬件是否在线
-    while(NRF24L01_Check())
-    {
-        // 硬件连接失败，可以在这里加LED闪烁提示
-        // SetLedMode(rLED_UP, LED_OFF);
-        // SetLedMode(rLED_DOWN, LED_ON);
-        // delay_ms(10);
-    }
+    while(NRF24L01_Check());
     
-    // 2. 配置为发送模式
-    NRF24L01_TX_Mode();
+    // 2. 配置为双向发送模式
+    NRF_Init(MODEL_TX2, CONNECT_CHANNAL);
+    // NRF24L01_TX_Mode();
     // SetLedMode(rLED_UP, LED_ON);
     // SetLedMode(rLED_DOWN, LED_OFF);
 }

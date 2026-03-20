@@ -1,15 +1,15 @@
 #include "headfile.h"
 
 // 任务执行周期(ms)
-#define COMM_PERIOD 8
+#define COMM_PERIOD 10
 #define KEY_PERIOD 20
-#define SHOW_PERIOD 30
+#define SHOW_PERIOD 40
+
 
 void StartCommonTask(void const * argument)
 {
     for(;;)
     {
-        Stick_Scan();
         Remote_SendData();
         osDelay(COMM_PERIOD);
     }
@@ -33,3 +33,12 @@ void StartShowTask(void const * argument)
         osDelay(SHOW_PERIOD); 
     }
 }
+
+// void StartOtherTask()
+// {
+//     for(;;)
+//     {
+        
+//         osDelay(OTHER_PERIOD);   
+//     }
+// }

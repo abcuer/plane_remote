@@ -17,9 +17,19 @@ typedef struct {
     uint8_t FIX_HEIGHT;  // 定高标志 (0/1)
     uint8_t CONNECT;     // 连接成功标志位
     uint8_t NRF_ERR;     // 错误计数
-} Remote_Data_Struct;
+} TX_Data_Struct;
 
-// 数据帧结构（用于通信）
+typedef struct{
+    float pitch;
+    float roll;
+    float yaw;    
+    float pid_kp;         
+    float pid_ki;
+    float pid_kd;
+    float fly_volt;     // 飞控电压
+} RX_Data_Struct;   // 飞控回传信息
+
+// 遥控器发送数据包
 typedef struct __attribute__((packed)){ // 强制编译器取消对齐补齐
     uint8_t header[3];   // 帧头: 'M', 'G', 'S'
     uint16_t THR;        // 油门
@@ -29,10 +39,24 @@ typedef struct __attribute__((packed)){ // 强制编译器取消对齐补齐
     uint8_t FIX_HEIGHT;  // 定高标志
     uint8_t LOCK_KEY;    // 锁定标志
     uint8_t checksum;    // 校验和
-} RC_Frame_Struct;
+} TX_Frame_Struct;
+
+/* 飞控回传给遥控器的数据结构 (建议控制在32字节内) */
+typedef struct __attribute__((packed)) {
+    uint8_t header[3];    // 'M', 'G', 'S'
+    float pitch;          // 俯仰
+    float roll;           // 横滚
+    float yaw;            // 偏航
+    float pid_kp;         // 以 Pitch 的 KP 为例
+    float pid_ki;
+    float pid_kd;
+    uint16_t voltage;     // 电压 (mv)
+    uint8_t checksum;     // 校验和
+} RX_Frame_Struct; // 接受数据包
 
 void Remote_SendData(void);
 
-extern Remote_Data_Struct tx_data;
+extern TX_Data_Struct tx_data;
+extern RX_Data_Struct rx_data;
 
 #endif
